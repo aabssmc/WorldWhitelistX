@@ -33,11 +33,11 @@ public class WorldWhitelistCommand implements SimpleCommand {
 
     @Override
     public List<String> tabComplete(CommandSender sender, Command command, String[] args) {
-        if (args.length == 0){
+        if (args.length == 1){
             if (sender.hasPermission("worldwhitelistx.command")) {
                 return List.of("on", "off", "add", "remove", "help", "reload");
             }
-        } else if (args.length == 1){
+        } else if (args.length == 2){
             if (args[0].equals("add") || args[0].equals("remove")){
                 if (sender.hasPermission("worldwhitelistx.add") ||sender.hasPermission("worldwhitelistx.remove")) {
                     List<String> list = new ArrayList<>();
@@ -51,7 +51,7 @@ public class WorldWhitelistCommand implements SimpleCommand {
                     return list;
                 }
             }
-        } else if (args.length == 2){
+        } else if (args.length == 3){
             if (args[0].equals("add") || args[0].equals("remove")){
                 if (sender.hasPermission("worldwhitelistx.add") || sender.hasPermission("worldwhitelistx.remove")) {
                     List<String> list = new ArrayList<>();
