@@ -1,0 +1,26 @@
+name: WorldWhitelistX
+version: '${version}'
+main: cc.aabss.worldwhitelistx.WorldWhitelistX
+api-version: 1.17
+authors: [ liltinyten, aabss ]
+description: Whitelist for your worlds!
+commands:
+  worldwhitelistx:
+    aliases: [wwhitelist, worldwhitelist]
+    description: Whitelist Worlds!
+
+permissions:
+  worldwhitelistx.bypass:
+    description: Bypasses whitelists in worlds.
+  worldwhitelistx.add:
+    description: Use /worldwhitelistx add.
+  worldwhitelistx.remove:
+    description: Use /worldwhitelistx remove.
+  worldwhitelistx.on:
+    description: Use /worldwhitelistx on.
+  worldwhitelistx.off:
+    description: Use /worldwhitelistx off.
+  worldwhitelistx.reload:
+    description: Use /worldwhitelistx reload
+  worldwhitelistx.command:
+    description: Use /worldwhitelistx
